@@ -4,11 +4,11 @@ class Shoe:
     def __init__(self, brand, size):
         self.brand = brand
         if not isinstance(size, int):
-            print("size must be an integer")
+            print("size must be an integer\n")
         else:
             self.size = size
         self.condition = 'New'
 
     def cobble(self):
-        print("The shoe has been repaired.")
+        print("Your shoe is as good as new!")
         self.condition = 'New'
